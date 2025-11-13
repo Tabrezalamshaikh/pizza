@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>services</title>
+
+	<style>
+		*{
+			margin: 0px;
+			padding: 0px;
+		}
+
+		.nav .logo{
+			margin-left: 20px;
+			margin-top: 20px;
+		}
+		.nav li a{
+			text-decoration: none;
+			color: orange;
+			margin-left: 10px;
+		}
+		.nav ul{
+			list-style: none;
+			display: flex;
+			margin-left: 300px;
+			margin-top: -40px;
+			font-size: 15px;
+		}
+
+		.nav li :hover{
+			color:	black;
+		}
+		.dropdown{
+			position: relative;
+		}
+
+		.dropdown-content{
+			display: none;
+			position: absolute;
+			top: 100%;
+			left: 0%;
+			background-color: white;
+			min-width: 170px;
+			box-shadow: 0px 4px 10px rgb(0, 0, 0, 0.1);
+			border-radius: 8px;
+			z-index: 999;
+		}
+
+		.dropdown-content a {
+			color: red;
+			padding: 12px 16px;
+			display: block;
+			text-decoration: none;
+		}
+
+		.dropdown-content a:hover{
+			background-color: #f2f2f2;
+		}
+
+		.dropdown:hover .dropdown-content{
+			display: block;
+		}
+
+		.dis img{
+			animation: spin 5s linear infinite;
+		}
+
+		@keyframes spin{
+			from{
+				transform: rotate(0deg);
+			}
+			to{
+				transform: rotate(360deg);
+			}
+		}
+
+		.container-1{
+			display: flex;
+		}
+		
+		.container-1 .i1{
+			width: 150px;
+			height: 250px;
+			margin-left: 50px;
+			margin-top: 20px;
+/*			background-color: red;*/
+			border: 1px solid maroon;
+			border-radius: 3px;
+			font-family: Yu Gothic UI;
+		}
+		.container-1 .i1:hover{
+			background-color: #de8223;
+		}
+		.container-1 .i2{
+			width: 150px;
+			height: 250px;
+			margin-left: 30px;
+			margin-top: 20px;
+/*			background-color: red;*/
+			border: 1px solid maroon;
+			border-radius: 3px;
+			font-family: Yu Gothic UI;
+		}
+		.container-1 .i2:hover{
+			background-color: #de8223;
+		}
+		.container-1 .i3{
+			width: 150px;
+			height: 250px;
+			margin-left: 30px;
+			margin-top: 20px;
+/*			background-color: red;*/
+			border: 1px solid maroon;
+			border-radius: 3px;
+			font-family: Yu Gothic UI;
+		}
+		.container-1 .i3:hover{
+			background-color: #de8223;
+		}
+		.container-1 .i4{
+			width: 150px;
+			height: 250px;
+			margin-left: 30px;
+			margin-top: 20px;
+/*			background-color: red;*/
+			border: 1px solid maroon;
+			border-radius: 3px;
+			font-family: Yu Gothic UI;
+		}
+		.container-1 .i4:hover{
+			background-color: #de8223;
+		}
+
+		.container-2{
+			display: flex;
+		}
+		
+		.container-2 .ii1{
+			width: 150px;
+			height: 250px;
+			margin-left: 50px;
+			margin-top: 20px;
+/*			background-color: red;*/
+			border: 1px solid maroon;
+			border-radius: 3px;
+			font-family: Yu Gothic UI;
+		}
+		.container-2 .ii1:hover{
+			background-color: #de8223;
+		}
+		.container-2 .ii2{
+			width: 150px;
+			height: 250px;
+			margin-left: 30px;
+			margin-top: 20px;
+/*			background-color: red;*/
+			border: 1px solid maroon;
+			border-radius: 3px;
+			font-family: Yu Gothic UI;
+		}
+		.container-2 .ii2:hover{
+			background-color: #de8223;
+		}
+		.container-2 .ii3{
+			width: 150px;
+			height: 250px;
+			margin-left: 30px;
+			margin-top: 20px;
+/*			background-color: red;*/
+			border: 1px solid maroon;
+			border-radius: 3px;
+			font-family: Yu Gothic UI;
+		}
+		.container-2 .ii3:hover{
+			background-color: #de8223;
+		}
+		.container-2 .ii4{
+			width: 150px;
+			height: 250px;
+			margin-left: 30px;
+			margin-top: 20px;
+/*			background-color: red;*/
+			border: 1px solid maroon;
+			border-radius: 3px;
+			font-family: Yu Gothic UI;
+		}
+		.container-2 .ii4:hover{
+			background-color: #de8223;
+		}
+
+
+		.footer{
+			width: 100%;
+			height: 250px;
+			background-color: orange;
+			display: flex;
+		}
+		.footer .company{
+			display: flex;
+			margin-top: 20px;
+			margin-left: 20px;
+			margin-right: 30px;
+			width: 170px;
+			height: 300px;
+			font-family: Yu Gothic UI;
+/*			background-color: #7575d8;*/
+		}
+		.footer .contact{
+			display: flex;
+			margin-top: 20px;
+			margin-left: 20px;
+			margin-right: 30px;
+			width: 170px;
+			height: 300px;
+			font-family: Yu Gothic UI;
+/*			background-color: #7575d8;*/
+		}
+		.footer .working{
+			display: flex;
+			margin-top: 20px;
+			margin-left: 20px;
+			margin-right: 30px;
+			width: 170px;
+			height: 300px;
+			font-family: Yu Gothic UI;
+/*			background-color: #7575d8;*/
+		}
+		.footer .message{
+			display: flex;
+			margin-top: 20px;
+			margin-left: 20px;
+			margin-right: 20px;
+			width: 170px;
+			height: 300px;
+			font-family: Yu Gothic UI;
+/*			background-color: #7575d8;*/
+		}
+
+	</style>
+</head>
+<body>
+
+	<div class="navbar">
+		<div class="nav">
+			<img class="logo" src="C:\Users\Success Institute\Documents\Tabrez\project\pizza khalo\logo.png" width="50px" height="50px">
+
+			<ul>
+			<li>
+				<a href="C:\Users\Success Institute\Documents\Tabrez\project\pizza khalo\index.html">HOME</a>
+
+			
+			</li>
+			<li>
+				<a href="C:\Users\Success Institute\Documents\Tabrez\project\pizza khalo\about.html">ABOUT</a>
+			</li>
+			<li>
+				<a href="C:\Users\Success Institute\Documents\Tabrez\project\pizza khalo\services.html">SERVICES</a>
+			</li>
+			<li>
+				<a href="C:\Users\Success Institute\Documents\Tabrez\project\pizza khalo\menu.html">MENU</a>
+			</li>
+			<li class="dropdown">
+				<a href="#"  style="margin-top:-4px; display: flex;">PAGES👇🏽</a>
+				<div class="dropdown-content">
+					<a href="#">Booking</a>
+					<a href="#">Our Team</a>
+					<a href="C:\Users\Success Institute\Documents\Tabrez\project\pizza khalo\testimonial.html">Testimonials</a>
+				</div>
+			</li>
+			<li>
+				<a href="#contact">CONTACT</a>
+			</li>
+			</ul>
+		</div>
+		
+	</div>
+
+	<hr style="margin-top: 40px;">
+
+	<div class="container-1">
+		<div class="i1">
+			<img src="C:\Users\Success Institute\Documents\Tabrez\project\pizza khalo\people.jpg" width="60px" height="70px" style="padding-left: 2px; padding-top: 20px;">
+			<h3 style="padding-left: 5px;">Master Chefs</h3>
+			<p style="font-size: 15px; padding-left: 5px; padding-top: 20px;">Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur.</p>
+		</div>
+		<div class="i2">
+			<img src="C:\Users\Success Institute\Documents\Tabrez\project\pizza khalo\knife.jpg" width="60px" height="70px" style="padding-left: 2px; padding-top: 20px;">
+			<h3 style="padding-left: 5px;">Master Chefs</h3>
+			<p style="font-size: 15px; padding-left: 5px; padding-top: 20px;">Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur.</p>
+		</div>
+		<div class="i3">
+			<img src="C:\Users\Success Institute\Documents\Tabrez\project\pizza khalo\headphone.jpg" width="60px" height="70px" style="padding-left: 2px; padding-top: 20px;">
+			<h3 style="padding-left: 5px;">Master Chefs</h3>
+			<p style="font-size: 15px; padding-left: 5px; padding-top: 20px;">Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur.</p>
+		</div>
+		<div class="i4">
+			<img src="C:\Users\Success Institute\Documents\Tabrez\project\pizza khalo\cart.jpg" width="60px" height="70px" style="padding-left: 2px; padding-top: 20px; background-color: transparent;">
+			<h3 style="padding-left: 5px;">Master Chefs</h3>
+			<p style="font-size: 15px; padding-left: 5px; padding-top: 20px;">Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur.</p>
+		</div>
+	</div>
+
+	<div class="container-2">
+		<div class="ii1">
+			<img src="C:\Users\Success Institute\Documents\Tabrez\project\pizza khalo\dish.jpg" width="60px" height="70px" style="padding-left: 2px; padding-top: 20px;">
+			<h3 style="padding-left: 5px;">Master Chefs</h3>
+			<p style="font-size: 15px; padding-left: 5px; padding-top: 20px;">Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur.</p>
+		</div>
+
+		<div class="ii2">
+			<img src="C:\Users\Success Institute\Documents\Tabrez\project\pizza khalo\headphone.jpg" width="60px" height="70px" style="padding-left: 2px; padding-top: 20px;">
+			<h3 style="padding-left: 5px;">Master Chefs</h3>
+			<p style="font-size: 15px; padding-left: 5px; padding-top: 20px;">Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur.</p>
+		</div>
+
+		<div class="ii3">
+			<img src="C:\Users\Success Institute\Documents\Tabrez\project\pizza khalo\knife.jpg" width="60px" height="70px" style="padding-left: 2px; padding-top: 20px;">
+			<h3 style="padding-left: 5px;">Master Chefs</h3>
+			<p style="font-size: 15px; padding-left: 5px; padding-top: 20px;">Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur.</p>
+		</div>
+
+		<div class="ii4">
+			<img src="C:\Users\Success Institute\Documents\Tabrez\project\pizza khalo\people.jpg" width="60px" height="70px" style="padding-left: 2px; padding-top: 20px;">
+			<h3 style="padding-left: 5px;">Master Chefs</h3>
+			<p style="font-size: 15px; padding-left: 5px; padding-top: 20px;">Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur.</p>
+		</div>
+	</div>
+
+	<hr style="margin-top: 30px; padding-bottom: 30px;">
+
+	<section id="contact">
+	<div class="footer">
+		<div class="company">
+			<div class="main1">
+				<h2>Company</h2>
+				<p style="margin-top: 30px; font-size: 15px;">About us</p>
+				<p style="margin-top: 5px; font-size: 15px;">Contact US</p>
+				<p style="margin-top: 5px; font-size: 15px;">Book a Table</p>
+				<p style="margin-top: 5px; font-size: 15px;">Privacy policy</p>
+				<p style="margin-top: 5px; font-size: 15px;">Terms & Condition </p>
+
+			</div>
+			
+
+		</div>
+		<div class="contact">
+			<div class="main2">
+				<h2>Contact US</h2>
+				<p style="margin-top: 30px; font-size: 15px;">653 road, Mumbai, India</p>
+				<p style="margin-top: 5px; font-size: 15px;">+91 987458749</p>
+				<p style="margin-top: 5px; font-size: 15px;">coffeepoint@gmail.com</p>
+			</div>
+	
+		</div>
+		<div class="working">
+			<div class="main3">
+				<h2>Working Hrs</h2>
+				<p style="margin-top: 30px; font-size: 15px;">Monday-Saturday</p>
+				<p style="margin-top: 5px; font-size: 15px;">08AM - 10PM</p>
+				<br>
+				<p style="margin-top: 5px; font-size: 15px;">Sunday</p>
+				<p style="margin-top: 5px; font-size: 15px;">10AM - 09PM</p>
+			</div>
+			
+		</div>
+		<div class="message">
+			<div class="main4">
+				<h2>Message</h2>
+				<p>For Questions send Message , </p>
+				<input type="email" name="" placeholder="Enter Email.." style="height:30px; outline: none; border: none; border-radius:5px; margin-top: 15px;">
+				<input type="number" name="" placeholder="Enter Mobile Number..." style="height:30px; outline: none; border: none; border-radius:5px; margin-top: 15px;">	
+			</div>
+			
+		</div>
+	</div>
+	</section>
+</body>
+</html>
